@@ -1,12 +1,12 @@
 """
 FX PDF RAG システム
 使用前に以下を実行:
-pip install langchain langchain-community langchain-ollama langchain-chroma chromadb pymupdf anthropic
+pip install langchain langchain-community langchain-ollama langchain-chroma chromadb pymupdf anthropic python-dotenv
 
 Ollamaが起動済みで以下のモデルがインストール済みであること:
   ollama pull nomic-embed-text
 
-環境変数:
+環境変数（.env ファイルまたはシェル環境変数で設定）:
   ANTHROPIC_API_KEY  （PDFテキスト抽出 + 回答生成に使用）
 """
 
@@ -14,6 +14,9 @@ import os
 import base64
 import fitz  # pymupdf
 import anthropic
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter

@@ -136,6 +136,12 @@ python rag.py
 
 ---
 
+## デモ動画
+
+[![ハイブリッドRAGシステム デモ](https://img.youtube.com/vi/VVGUYLBhijE/0.jpg)](https://www.youtube.com/watch?v=VVGUYLBhijE)
+
+---
+
 ## ライセンス
 
 MIT
